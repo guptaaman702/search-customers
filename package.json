@@ -1,0 +1,30 @@
+{
+  "name": "search-customers",
+  "version": "1.0.0",
+  "description": "This package will search the customers within 100km range of Dublin Area for inviting them for food and drinks.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guptaaman2011/search-customers.git"
+  },
+  "keywords": [
+    "search",
+    "customers"
+  ],
+  "author": "Aman <guptaaman702@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guptaaman2011/search-customers/issues"
+  },
+  "homepage": "https://github.com/guptaaman2011/search-customers#readme",
+  "devDependencies": {
+    "chai": "~4.2.0",
+    "mocha": "~6.1.4",
+    "typescript": "~3.4.5"
+  }
+}

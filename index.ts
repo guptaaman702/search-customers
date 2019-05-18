@@ -16,7 +16,10 @@ export function find_customers(customer_records: any, latitude: number, longitud
             customers_list.push({ 'name': customer_records[i].name, 'user_id': customer_records[i].user_id })
         }
     }
-    return customers_list;
+    const sortedCustomers = customers_list.sort(function(a, b){
+        return a.user_id - b.user_id;
+    });    
+    return sortedCustomers;
 }
 
 /**
@@ -38,3 +41,4 @@ export function getDistance(lat1: number,lat2: number,long1: number,long2: numbe
     const angle = Math.acos(Math.sin(lat1)*Math.sin(lat2) + Math.cos(lat1)*Math.cos(lat2)*Math.cos(Math.abs(long1-long2)));
     return radius*angle;
 }
+

@@ -8,11 +8,12 @@ describe('find_customers function test', () => {
             { "latitude": "52.986375", "user_id": 12, "name": "Christina McArdle", "longitude": "-6.043701" },
             { "latitude": "51.92893", "user_id": 1, "name": "Alice Cahill", "longitude": "-10.27699" },
             { "latitude": "51.8856167", "user_id": 2, "name": "Ian McArdle", "longitude": "-10.4240951" },
+            {"latitude": "54.0894797", "user_id": 8, "name": "Eoin Ahearn", "longitude": "-6.18671"}
         ];
         const dublin_latitude = 53.339428;
         const dublin_longitude = -6.257664;
         const result = index.find_customers(json, dublin_latitude, dublin_longitude);
-        expect(result).to.have.lengthOf(1);
+        expect(result).to.have.lengthOf(2);
     });
 
     it('should return 0 record in customers_list whose distance is less than or equal to 100km', () => {

@@ -1,4 +1,4 @@
-# mypluralize
+# search-customers
 A Node.js module that will search the customers within 100km range of Dublin Area for inviting them for food and drinks.
 ## Installation 
 ```sh

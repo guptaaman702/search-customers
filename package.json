@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guptaaman2011/search-customers.git"
+    "url": "git+https://github.com/guptaaman702/search-customers.git"
   },
   "keywords": [
     "search",
@@ -19,9 +19,9 @@
   "author": "Aman <guptaaman702@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/guptaaman2011/search-customers/issues"
+    "url": "https://github.com/guptaaman702/search-customers/issues"
   },
-  "homepage": "https://github.com/guptaaman2011/search-customers#readme",
+  "homepage": "https://github.com/guptaaman702/search-customers#readme",
   "devDependencies": {
     "chai": "~4.2.0",
     "mocha": "~6.1.4",

@@ -6,12 +6,12 @@
 export function find_customers(customer_records: any, latitude: number, longitude: number): any {
     let customers_list = [];
     const radius_earth = 6371; // radius of earth
-    for (var i = 0; i < customer_records.length; i++) {
-        var lat1 = degrees_to_radians(latitude);
-        var long1 = degrees_to_radians(longitude);
-        var lat2 = degrees_to_radians(customer_records[i].latitude);
-        var long2 = degrees_to_radians(customer_records[i].longitude);
-        var distanceBetweenTwoPoints = getDistance(lat1, lat2, long1, long2, radius_earth);
+    for (let i = 0; i < customer_records.length; i++) {
+        const lat1 = degrees_to_radians(latitude);
+        const long1 = degrees_to_radians(longitude);
+        const lat2 = degrees_to_radians(customer_records[i].latitude);
+        const long2 = degrees_to_radians(customer_records[i].longitude);
+        const distanceBetweenTwoPoints = getDistance(lat1, lat2, long1, long2, radius_earth);
         if (distanceBetweenTwoPoints <= 100) {
             customers_list.push({ 'name': customer_records[i].name, 'user_id': customer_records[i].user_id })
         }

@@ -1,6 +1,6 @@
 {
   "name": "search-customers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package will search the customers within 100km range of Dublin Area for inviting them for food and drinks.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
